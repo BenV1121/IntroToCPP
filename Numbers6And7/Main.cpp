@@ -19,4 +19,6 @@ int main()
 	printf("The average is %d \n", avg);
 
 	system("pause");
+
+	//I lied, there is no problem #7.
 }

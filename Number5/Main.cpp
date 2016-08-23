@@ -9,6 +9,14 @@
 	d) i: 1  ch: error  f: error
 	e) error 
 	f) error 
+
+	#5b
+	a) i: 1 ch: A f: 45
+	b) i: 1 ch: A f: 45
+	c) i: 1  ch: 9  f: 45
+	d) i: 1  ch: 9  f: 45
+	e) i: B
+	f) i:  
 */
 
 int main()
@@ -18,9 +26,9 @@ int main()
 	int i = 0;
 	float f = 0;
 	char ch = 'a';
-	std::cin >> i >> ch >> f;
-	std::cout << "i: " << i << "\nch: " << ch << "\nf: " << f << std::endl;
-
-	char foo;
-	std::cin >> foo;
+	
+	scanf_s("%i %c %f", &i, &ch, 1, &f);
+	getchar(); //clear a hanging new line
+	printf("%i %c %f", i, ch, f);
+	getchar(); //pause the program
 }
